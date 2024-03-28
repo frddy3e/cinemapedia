@@ -6,7 +6,7 @@ import 'package:cinemapedia/config/router/app_router.dart';
 import 'package:cinemapedia/config/theme/app_theme.dart';
 
 Future<void> main() async {
-  dotenv.load(fileName: '.env');
+  await dotenv.load(fileName: '.env');
   runApp(const ProviderScope(child: MainApp()));
 }
 
